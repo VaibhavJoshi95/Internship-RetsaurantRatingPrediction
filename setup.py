@@ -13,3 +13,12 @@ def get_requirements(file_path:str)->List[str]:
             requirements.remove(HYPEN_E_DOT)
 
     return requirements
+
+setup(
+    name="RestaurantRatePediction",
+    version='0.0.1',
+    author='Vaibhav Joshi',
+    author_email='vaibhavgjoshi95@gmail.com',
+    install_requires=get_requirements('requirements.txt'),
+    packages=find_packages()
+)
